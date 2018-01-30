@@ -17,7 +17,7 @@ const HeaderSlider = () => {
     };
 
     const renderSlides = () => {
-        return [0,1,2,3,4,5,6,7].map((el, index) => {
+        return [0,1,2,3,4].map((el, index) => {
             return (
                 <div key={index}>
                     <div className='img-container' style={{ backgroundImage: `url('./img/${index}.jpg')` }}></div>

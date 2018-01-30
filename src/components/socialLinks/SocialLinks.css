@@ -1,0 +1,25 @@
+.social-links {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.social-links svg path{ /* иконки f/insta */
+    transition: 0.3s;
+    fill: #FFFFFF !important;
+}
+
+.social-links svg:hover path { /* иконки f/insta hover */
+    fill: #A9A9A9 !important;
+}
+
+.social-links svg:hover {
+    cursor: pointer;
+}
