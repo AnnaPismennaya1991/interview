@@ -1,19 +1,25 @@
+// выпадающий список
 import React from 'react';
 import { Select } from 'antd';
-
+import './Select.css';
 import 'antd/lib/select/style/index.css';
+
 
 const Option = Select.Option;
 
-const SS = () => {
+const SelectComponent = () => {
     return (
-        <Select defaultValue="1" >
-            <Option value="0">1 раз</Option>
+        <Select defaultValue="0">
+            <Option value="0">Выберите:</Option>
             <Option value="1">1 раз</Option>
-            <Option value="2">1 раз</Option>
-            <Option value="3">1 раз</Option>
+            <Option value="2">2 раза</Option>
+            <Option value="3">3 раза</Option>
+            <Option value="4">4 раза</Option>
+            <Option value="5">5 раз</Option>
+            <Option value="6">Чаще 5 раз</Option>
         </Select>
     );
 }
 
-export default SS;
+export default SelectComponent;
+// className='select-component'

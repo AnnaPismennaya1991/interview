@@ -1,0 +1,28 @@
+.ant-select-selection,
+.ant-select-selection--single {
+    font-family: 'Montserrat', sans-serif;
+    border: transparent;
+    cursor: pointer;
+    outline: none;
+    color: black;
+}
+
+.ant-select-open
+.ant-select-focused,
+.ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* цвет рамочки */
+.ant-select-selection:hover {
+    border-color: #80CBC4 !important;
+}
+
+/* цвет наведения на пункт */
+.ant-select-dropdown-menu-item:hover {
+    background-color: #B2DFDB !important;
+}

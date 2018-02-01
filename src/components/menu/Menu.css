@@ -1,23 +1,24 @@
 .menu-component {
-    display: flex;
-    margin-top: 44px;
-    margin-bottom: 20px;
-    flex: 1;
     background: transparent;
+    margin-bottom: 20px;
+    margin-top: 44px;
+    display: flex;
+    flex: 1;
 }
 
+/* главная, опросник, статистика */
 .main,
 .interview,
 .statistica {
-    font-size: 17px;
-    font-weight: lighter;
-    font-family: sans-serif;
-    margin: 0px 8px 10px 8px;
     font-family: 'Montserrat', sans-serif;
+    margin: 0px 8px 10px 8px;
+    font-family: sans-serif;
     text-decoration: none;
+    font-weight: lighter;
     border-bottom: none;
-    color: #F5F5F5;
+    font-size: 17px;
     transition: .3s;
+    color: #F5F5F5;
 }
 
 .main {
@@ -27,7 +28,8 @@
 .main:hover,
 .interview:hover,
 .statistica:hover {
-    color: #A9A9A9;
     border-bottom: none;
     cursor: pointer;
+    /* color: #A9A9A9; */
+    color: #80CBC4;
 }

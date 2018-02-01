@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Select from '../common/select/Select';
-// import Checkbox from '../common/checkbox/Checkbox';
+// import Checkbox from '../common/checkboxTable/Checkbox';
 
 import TITLES from './titles';
 
