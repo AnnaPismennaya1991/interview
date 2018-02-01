@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import Select from '../common/select/Select';
 // import Checkbox from '../common/checkboxTable/Checkbox';
 
-import TITLES from './titles';
+import TITLES from './Titles';
+import './Titles.css';
 
 const INPUTS = {
     select: Select,
@@ -16,7 +17,7 @@ class Question extends Component {
         const QuestionComponent = INPUTS[this.props.type];
 
         return (
-            <div>
+            <div className='question-container'>
                 <h3>{ TITLES[this.props.id] }</h3>
                 <QuestionComponent />
             </div>
