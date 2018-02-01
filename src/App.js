@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Header from './Header';
-import Content from './Content';
-import Footer from './Footer';
+import Header from './components/header/Header';
+import Content from './components/content/Content';
+import Footer from './components/footer/Footer';
 
 class App extends Component {
     render() {
@@ -11,7 +11,7 @@ class App extends Component {
             <div className="App">
                 <Header />
                 <Content />
-                <Footer />
+                { false && <Footer /> }
             </div>
         );
     }

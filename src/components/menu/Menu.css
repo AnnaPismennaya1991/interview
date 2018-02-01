@@ -1,0 +1,33 @@
+.menu-component {
+    display: flex;
+    margin-top: 44px;
+    margin-bottom: 20px;
+    flex: 1;
+    background: transparent;
+}
+
+.main,
+.interview,
+.statistica {
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    margin: 0px 8px 10px 8px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border-bottom: none;
+    color: #F5F5F5;
+    transition: .3s;
+}
+
+.main {
+    font-size: 18px;
+}
+
+.main:hover,
+.interview:hover,
+.statistica:hover {
+    color: #A9A9A9;
+    border-bottom: none;
+    cursor: pointer;
+}

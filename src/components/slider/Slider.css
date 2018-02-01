@@ -20,7 +20,7 @@
 
 .header-slider button:before { /* точки прокрутки слайдера */
     transition: .3s;
-    color: #FFFFFF !important;
+    color: white !important;
 }
 
 .header-slider button:after {
@@ -41,6 +41,7 @@
 .header-slider .slick-dots {
     bottom: -35px;
 }
+
 
 .img-container {
     width: 100%;

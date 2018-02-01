@@ -1,8 +1,8 @@
 import React from 'react';
 
-import SocialLinks from './components/socialLinks/SocialLinks';
-import Slider from './components/slider/Slider';
-import Menu from './components/menu/Menu';
+import SocialLinks from '../socialLinks/SocialLinks';
+import Slider from '../slider/Slider';
+import Menu from '../menu/Menu';
 import './Header.css';
 
 const Header = () => {

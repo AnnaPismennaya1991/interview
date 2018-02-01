@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Questionnary from '../questionnary/Questionnary'
+
 const Content = () => {
     return (
         <div>
-            Content
+            <Questionnary />
         </div>
     );
 }

@@ -19,9 +19,9 @@ export default class MenuComponent extends React.Component {
                     <Menu.Item key="interview">Oпросник</Menu.Item>
                     <Menu.Item key="statistica">Статистика</Menu.Item>
                 </Menu> */}
-                <div>Главная</div>
-                <div>Опросник</div>
-                <div>Статистика</div>
+                <div className='main'>Главная</div>
+                <div className='interview'>Опросник</div>
+                <div className="statistica">Статистика</div>
             </div>
         );
     }
