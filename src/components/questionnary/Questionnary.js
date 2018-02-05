@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 
 import Question from '../question/Question';
-import Input from '../common/input/Input';
+import TitleQuestionnary from '../common/title/TitleQuestionnary'
 
 class Questionnary extends Component {
     render() {
         return (
             <div>
-                <Input />
-                <Question type='select' id={0} />
+                <TitleQuestionnary id='questionnaryEating' />
+                <Question type='select' id='quantityEating' />
                 {/* <Question type='checkbox' id={1} /> */}
-                {/* <Question type='checkbox' id={2} />
-                <Question type='checkbox' id={3} />
-                <Question type='checkbox' id={4} />
-                <Question type='checkbox' id={5} /> */}
             </div>
         );
     }

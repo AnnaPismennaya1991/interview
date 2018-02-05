@@ -1,13 +1,15 @@
+/* выпадающий список */
 .ant-select-selection,
 .ant-select-selection--single {
     font-family: 'Montserrat', sans-serif;
     border: transparent;
+    min-width: 150px;
     cursor: pointer;
     outline: none;
     color: black;
 }
 
-.ant-select-open
+.ant-select-open,
 .ant-select-focused,
 .ant-select-selection,
 .ant-select-selection:focus,
@@ -17,9 +19,14 @@
     outline: none !important;
 }
 
-/* цвет рамочки */
+/* цвет рамочки - цвет темнее*/
+.ant-select-selection {
+    transition: .3s;
+    border: 1px solid rgba(0,0,0,0) !important;
+}
+
 .ant-select-selection:hover {
-    border-color: #80CBC4 !important;
+    border: 1px solid #80CBC4 !important;
 }
 
 /* цвет наведения на пункт */

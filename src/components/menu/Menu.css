@@ -22,8 +22,8 @@
 }
 
 .main {
-    font-size: 18px;
     margin-left: 24px;
+    font-size: 18px;
 }
 
 .main:hover,
@@ -31,6 +31,5 @@
 .statistica:hover {
     border-bottom: none;
     cursor: pointer;
-    /* color: #A9A9A9; */
     color: #80CBC4;
 }
