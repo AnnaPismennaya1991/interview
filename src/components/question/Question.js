@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Select from '../common/select/Select';
-// import Checkbox from './';
+import CheckboxTable from '../common/checkboxTable/CheckboxTable';
 
 import TITLES from './Titles';
 import './Titles.css';
@@ -9,7 +9,7 @@ import selectData from '../common/select/constants';
 
 const INPUTS = {
     select: Select,
-    // checkbox: Checkbox
+    checkboxTable: CheckboxTable
 };
 
 
