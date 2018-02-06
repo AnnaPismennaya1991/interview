@@ -34,7 +34,9 @@
     border-radius: 50%;
 }
 
-.header-slider .slick-arrow {
+/* стрелочка прокрутки слайдера - слева */
+.header-slider .slick-arrow,
+.slick-next {
     display: none !important;
 }
 

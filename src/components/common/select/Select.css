@@ -3,6 +3,7 @@
 .ant-select-selection--single {
     font-family: 'Montserrat', sans-serif;
     margin-left: 20px !important;
+    font-weight: lighter;
     border: transparent;
     min-width: 150px;
     cursor: pointer;
@@ -20,12 +21,13 @@
     outline: none !important;
 }
 
-/* цвет рамочки - цвет темнее*/
+/* цвет рамочки */
 .ant-select-selection {
     transition: .3s;
     border: 1px solid rgba(0,0,0,0) !important;
 }
 
+/* цвет рамочки при наведении - цвет темнее*/
 .ant-select-selection:hover {
     border: 1px solid #80CBC4 !important;
 }

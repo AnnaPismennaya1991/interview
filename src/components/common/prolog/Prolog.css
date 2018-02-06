@@ -1,0 +1,43 @@
+/* пролог - приветствие, имя, возраст, пол */
+
+/* подсказка к input */
+.prolog-input .ant-input-group-addon,
+.ant-input-group-addon:first-child {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    margin: 20px;
+    width: 160px;
+}
+
+/* input - поле ввода */
+.ant-input,
+.ant-input:last-child,
+.ant-input-group {
+    width: auto !important;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* input hover - поле ввода */
+.ant-input:hover,
+.ant-input:last-child:hover,
+.ant-input-group:hover {
+    border-color: #80CBC4 !important;
+}
+
+/* весь блок пролога */
+.prolog {
+    margin: 20px;
+}
+
+/* блок подсказки и input */
+.prolog-input .ant-input-group-wrapper {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.prolog-intro {
+    margin-bottom: 20px;
+}

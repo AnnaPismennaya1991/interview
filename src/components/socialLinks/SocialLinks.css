@@ -17,7 +17,6 @@
 }
 
 .social-links svg:hover path { /* иконки f/insta hover */
-    /* fill: #A9A9A9 !important; - серый*/
     fill: #B2DFDB !important;
 }
 

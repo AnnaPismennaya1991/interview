@@ -2,13 +2,13 @@
 import React, { Component } from 'react';
 
 import Question from '../question/Question';
-import TitleQuestionnary from '../common/title/TitleQuestionnary'
+import Prolog from '../common/prolog/Prolog'
 
 class Questionnary extends Component {
     render() {
         return (
             <div>
-                <TitleQuestionnary id='questionnaryEating' />
+                <Prolog id='questionnaryEating' />
                 <Question type='select' id='quantityEating' />
                 {/* <Question type='checkbox' id={1} /> */}
             </div>
