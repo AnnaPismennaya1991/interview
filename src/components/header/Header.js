@@ -1,3 +1,4 @@
+// ссылки, слайдер, горизонтальное меню
 import React from 'react';
 
 import SocialLinks from '../socialLinks/SocialLinks';

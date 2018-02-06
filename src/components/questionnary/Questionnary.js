@@ -1,3 +1,4 @@
+// весь опросник с названием и вопросами
 import React, { Component } from 'react';
 
 import Question from '../question/Question';

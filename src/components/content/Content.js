@@ -1,3 +1,4 @@
+// опросник
 import React from 'react';
 
 import Questionnary from '../questionnary/Questionnary';

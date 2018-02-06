@@ -1,3 +1,4 @@
+// пролог - приветствие, имя, возраст, пол
 import React, { Component } from 'react';
 import { Input, Icon } from 'antd';
 

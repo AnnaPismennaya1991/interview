@@ -2,6 +2,7 @@
 .ant-select-selection,
 .ant-select-selection--single {
     font-family: 'Montserrat', sans-serif;
+    margin-left: 20px !important;
     border: transparent;
     min-width: 150px;
     cursor: pointer;

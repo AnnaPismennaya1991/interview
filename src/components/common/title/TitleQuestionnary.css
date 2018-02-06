@@ -1,3 +1,4 @@
+/* пролог - приветствие, имя, возраст, пол */
 .ant-input-group-addon {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
@@ -13,15 +14,6 @@
 }
 .ant-input-group {
     border-color: #80CBC4 !important;
-}
-
-.ant-select-selection {
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 20px !important;
-    border: transparent;
-    cursor: pointer;
-    outline: none;
-    color: black;
 }
 
 .title-questionnary {
