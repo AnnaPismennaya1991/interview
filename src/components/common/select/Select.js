@@ -14,12 +14,17 @@ const renderOptions = (items) => {
 };
 
 const SelectComponent = (props) => {
-
     return (
-        <Select defaultValue={props.defaultValue} placeholder='Выберите'>
+        <Select dropdownClassName={props.dropdownClassName}
+            defaultValue={props.defaultValue}
+            placeholder={props.placeholder} >
             { renderOptions(props.items) }
         </Select>
     );
-}
+};
+
+SelectComponent.defaultProps = {
+    placeholder: 'Выберите'
+};
 
 export default SelectComponent;

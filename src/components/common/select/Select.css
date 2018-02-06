@@ -2,7 +2,6 @@
 .ant-select-selection,
 .ant-select-selection--single {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 20px !important;
     font-weight: lighter;
     border: transparent;
     min-width: 150px;
@@ -35,4 +34,5 @@
 /* цвет наведения на пункт */
 .ant-select-dropdown-menu-item:hover {
     background-color: #B2DFDB !important;
+    /* width: 100px; */
 }

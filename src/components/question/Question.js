@@ -6,6 +6,7 @@ import CheckboxTable from '../common/checkboxTable/CheckboxTable';
 import TITLES from './Titles';
 import './Titles.css';
 import selectData from '../common/select/constants';
+import './Question.css';
 
 const INPUTS = {
     select: Select,

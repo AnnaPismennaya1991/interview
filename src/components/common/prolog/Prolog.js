@@ -21,7 +21,7 @@ class Prolog extends Component {
                     <Input addonBefore='Введите Ваше имя' />
                     <Input addonBefore='Введите Ваш возраст' />
                 </div>
-                <Select items={selectData.sex} />
+                <Select placeholder='Пол' dropdownClassName='dropdown-sex' items={selectData.sex} />
             </div>
         );
     }
