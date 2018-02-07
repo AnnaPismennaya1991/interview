@@ -10,9 +10,9 @@ const RadioGroupComponent = (props) => {
     return (
         <div className='radio-group'>
             <RadioGroup name={ props.name }>
-                <Radio value='да'></Radio>
-                <Radio value='время от времени'></Radio>
-                <Radio value='нет'></Radio>
+                <div><Radio value='да'></Radio></div>
+                <div><Radio value='время от времени'></Radio></div>
+                <div><Radio value='нет'></Radio></div>
             </RadioGroup>
         </div>
     );
