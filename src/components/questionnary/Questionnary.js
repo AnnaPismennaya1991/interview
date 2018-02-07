@@ -11,7 +11,7 @@ class Questionnary extends Component {
                 <Prolog id='questionnaryEating' />
                 <Question type='select' id='quantityEating' />
                 <Question type='checkboxTable' id='differentQuestions' />
-                {/* <Question type='checkbox' id={1} /> */}
+                <Question type='checkbox' id='checkbox' />
             </div>
         );
     }

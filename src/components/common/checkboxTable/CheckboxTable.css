@@ -45,7 +45,10 @@
     background-color: white;
     border: transparent;
     border-radius: 5px;
+}
 
+.column-checkbox {
+    border: transparent;
 }
 
 /*
