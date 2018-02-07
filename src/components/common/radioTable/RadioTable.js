@@ -1,12 +1,14 @@
-// таблица чекбоксов
+// таблица радио-кнопок
 import React from 'react';
-import Checkbox from '../checkbox/Checkbox';
-import './CheckboxTable.css';
 
-const CheckboxTable = (props) => {
+import Checkbox from '../checkbox/Checkbox';
+import './RadioTable.css';
+import Radio from '../radio/Radio';
+
+const RadioTable = (props) => {
 
     return (
-        <div className='Checkbox-table'>
+        <div className='Radio-table'>
             <div className='string'>
                 <div className='column-1-empty'></div>
                 <div className='string-1'><span>Да</span></div>
@@ -21,10 +23,7 @@ const CheckboxTable = (props) => {
             </div>
             <div className='string'>
                 <div className='column-1'><span>У Вас бывает чувство голода в течение дня?</span></div>
-                <div className='column-checkbox'><span><Checkbox /></span></div>
-                <div className='column-checkbox'><span><Checkbox /></span></div>
-                <div className='column-checkbox'><span><Checkbox /></span></div>
-
+                {/* <RadioGroup /> */}
             </div>
             <div className='string'>
                 <div className='column-1'><span>Едите мясо?</span></div>
@@ -60,4 +59,4 @@ const CheckboxTable = (props) => {
     );
 }
 
-export default CheckboxTable;
+export default RadioTable;

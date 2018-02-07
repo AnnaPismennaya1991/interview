@@ -3,8 +3,8 @@
 .column-1-empty первая пустая ячейка
 .column-checkbox ячейки чекбоксов */
 
-/* таблица чекбоксов */
-.Checkbox-table {
+/* таблица radio-кнопок */
+.Radio-table {
     align-content: space-around;
     flex-direction: column;
     align-items: stretch;
@@ -25,7 +25,7 @@
     text-align: center;
     display: flex;
     padding: 10px;
-    margin: 10px;
+    margin: 8px;
     flex: 1;
 }
 
@@ -48,8 +48,9 @@
     border-radius: 5px;
 }
 
+.ant-checkbox,
 .column-checkbox {
-    border: transparent;
+    border: transparent !important;
 }
 
 /*

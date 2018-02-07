@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Select from '../common/select/Select';
-import CheckboxTable from '../common/checkboxTable/CheckboxTable';
+import RadioTable from '../common/radioTable/RadioTable';
 import Checkbox from '../common/checkbox/Checkbox';
 
 import TITLES from './Titles';
@@ -11,7 +11,7 @@ import './Question.css';
 
 const INPUTS = {
     select: Select,
-    checkboxTable: CheckboxTable,
+    radioTable: RadioTable,
     checkbox: Checkbox
 };
 

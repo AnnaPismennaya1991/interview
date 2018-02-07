@@ -1,8 +1,8 @@
 // выпадающий список
 import React, { Component } from 'react';
+
 import { Select } from 'antd';
 import 'antd/lib/select/style/index.css';
-
 import './Select.css';
 
 const Option = Select.Option;
