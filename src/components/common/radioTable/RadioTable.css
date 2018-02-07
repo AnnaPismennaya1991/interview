@@ -4,6 +4,7 @@
 .column-checkbox ячейки чекбоксов */
 
 /* таблица radio-кнопок */
+
 .Radio-table {
     align-content: space-around;
     flex-direction: column;
@@ -15,10 +16,14 @@
     display: flex;
 }
 
+.string-1-main {
+    display: flex;
+    flex: 3;
+}
+
 .column-1,
 .string-1,
-.column-1-empty,
-.column-checkbox {
+.column-1-empty {
     border: 1px solid black;
     justify-content: center;
     align-items: center;
@@ -33,7 +38,6 @@
 .column-1-empty {
     justify-content: flex-start;
     text-align: left;
-    flex: 2;
 }
 
 .column-1-empty {
@@ -43,15 +47,14 @@
 .column-1,
 .string-1 {
     background-color: white;
-    /* border: 1px solid #E6E6E6; */
     border: transparent;
     border-radius: 5px;
 }
 
-.ant-checkbox,
-.column-checkbox {
-    border: transparent !important;
+.radio-group {
+    flex: 3;
 }
+
 
 /*
 #E0F2F1 - светлый
