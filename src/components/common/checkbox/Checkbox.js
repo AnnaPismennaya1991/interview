@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Checkbox } from 'antd';
 import 'antd/lib/checkbox/style/index.css';
+import './Checkbox.css';
 
 class CheckboxComponent extends Component {
 
     render() {
         return (
-            <Checkbox></Checkbox>
+            <Checkbox className='Checkbox-mini'></Checkbox>
         );
     }
 };

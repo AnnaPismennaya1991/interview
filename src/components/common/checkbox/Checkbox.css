@@ -1,0 +1,20 @@
+.Checkbox-mini {
+    /* border: 1px solid #E6E6E6; */
+    border: transparent;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin: 0px 10px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    }
+
+.ant-checkbox,
+.ant-checkbox-checked,
+.ant-checkbox-checked:after {
+    border: transparent !important;
+    background-color: white !important;
+}
