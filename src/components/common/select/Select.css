@@ -22,17 +22,32 @@
 
 /* цвет рамочки */
 .ant-select-selection {
-    transition: .3s;
     border: 1px solid rgba(0,0,0,0) !important;
+    transition: .3s;
 }
 
 /* цвет рамочки при наведении - цвет темнее*/
 .ant-select-selection:hover {
-    border: 1px solid #80CBC4 !important;
+    border: 1px solid #4DB6AC !important;
 }
 
-/* цвет наведения на пункт */
+/* светлый цвет наведения на пункт */
 .ant-select-dropdown-menu-item:hover {
-    background-color: #B2DFDB !important;
+    background-color: #E0F2F1 !important;
     /* width: 100px; */
 }
+
+/* активный select - при выборе пункта фон становится темный */
+.select-active .ant-select-selection {
+    border: 1px solid rgba(0,0,0,0) !important;
+    background-color: #4DB6AC !important;
+    color: white;
+}
+
+/*
+#E0F2F1 - светлый
+#B2DFDB
+#80CBC4
+#4DB6AC - темнее
+#26A69A
+ */

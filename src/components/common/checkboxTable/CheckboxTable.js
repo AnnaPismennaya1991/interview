@@ -7,52 +7,52 @@ const CheckboxTable = (props) => {
     return (
         <div className='Checkbox-table'>
             <div className='string'>
-                <div className='column-1'></div>
-                <div className='column-2'>Да</div>
-                <div className='column-3'>Время от времени</div>
-                <div className='column-4'>Нет</div>
+                <div className='column-1-empty'></div>
+                <div className='string-1'><span>Да</span></div>
+                <div className='string-1'><span>Время от времени</span></div>
+                <div className='string-1'><span>Нет</span></div>
             </div>
             <div className='string'>
-                <div className='column-1'>Завтракаете?</div>
-                <div className='column-2'>Чекбокс</div>
-                <div className='column-3'>Чекбокс</div>
-                <div className='column-4'>Чекбокс</div>
+                <div className='column-1'><span>Завтракаете?</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
             </div>
             <div className='string'>
-                <div className='column-1'>У Вас бывает чувство голода в течение дня?</div>
-                <div className='column-2'>Чекбокс</div>
-                <div className='column-3'>Чекбокс</div>
-                <div className='column-4'>Чекбокс</div>
+                <div className='column-1'><span>У Вас бывает чувство голода в течение дня?</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
             </div>
             <div className='string'>
-                <div className='column-1'>Едите мясо?</div>
-                <div className='column-2'>Чекбокс</div>
-                <div className='column-3'>Чекбокс</div>
-                <div className='column-4'>Чекбокс</div>
+                <div className='column-1'><span>Едите мясо?</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
             </div>
             <div className='string'>
-                <div className='column-1'>Едите овощи?</div>
-                <div className='column-2'>Чекбокс</div>
-                <div className='column-3'>Чекбокс</div>
-                <div className='column-4'>Чекбокс</div>
+                <div className='column-1'><span>Едите овощи?</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
             </div>
             <div className='string'>
-                <div className='column-1'>Едите фрукты?</div>
-                <div className='column-2'>Чекбокс</div>
-                <div className='column-3'>Чекбокс</div>
-                <div className='column-4'>Чекбокс</div>
+                <div className='column-1'><span>Едите фрукты?</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
             </div>
             <div className='string' >
-                <div className='column-1'>Едите молочные изделия?</div>
-                <div className='column-2'>Чекбокс</div>
-                <div className='column-3'>Чекбокс</div>
-                <div className='column-4'>Чекбокс</div>
+                <div className='column-1'><span>Едите молочные изделия?</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбоксv</span></div>
             </div>
             <div className='string'>
-                <div className='column-1'>Едите сладoсти?</div>
-                <div className='column-2'>Чекбокс</div>
-                <div className='column-3'>Чекбокс</div>
-                <div className='column-4'>Чекбокс</div>
+                <div className='column-1'><span>Едите сладoсти?</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
+                <div className='column-checkbox'><span>Чекбокс</span></div>
             </div>
         </div>
     );

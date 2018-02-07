@@ -1,5 +1,5 @@
 // выпадающий список
-import React from 'react';
+import React, { Component } from 'react';
 import { Select } from 'antd';
 import 'antd/lib/select/style/index.css';
 
@@ -13,18 +13,30 @@ const renderOptions = (items) => {
     });
 };
 
-const SelectComponent = (props) => {
-    return (
-        <Select dropdownClassName={props.dropdownClassName}
-            defaultValue={props.defaultValue}
-            placeholder={props.placeholder} >
-            { renderOptions(props.items) }
-        </Select>
-    );
-};
+class SelectComponent extends Component {
+    state = { value: undefined }
 
-SelectComponent.defaultProps = {
-    placeholder: 'Выберите'
+    static defaultProps = {
+        placeholder: 'Выберите'
+    }
+
+    onChange = (value) => {
+        this.setState({ value });
+    }
+
+    render() {
+        const className = this.state.value !== undefined ? 'select-active' : '';
+
+        return (
+            <Select dropdownClassName={this.props.dropdownClassName}
+                defaultValue={this.props.defaultValue}
+                placeholder={this.props.placeholder}
+                onChange={this.onChange}
+                className={className} >
+                { renderOptions(this.props.items) }
+            </Select>
+        );
+    }
 };
 
 export default SelectComponent;
