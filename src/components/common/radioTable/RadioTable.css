@@ -21,6 +21,21 @@
     flex: 3;
 }
 
+.string-1,
+.column-1 {
+    transition: .3s;
+}
+
+.string-1.hovered,
+.column-1.hovered {
+    background-color: #E0F2F1
+}
+
+.string-1.selected,
+.column-1.selected {
+    background-color: #4DB6AC;
+}
+
 .column-1,
 .string-1,
 .column-1-empty {
