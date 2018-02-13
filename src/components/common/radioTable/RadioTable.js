@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
 
+import radioGroup from './constants';
 import RadioGroup from '../radio/RadioGroup';
 import './RadioTable.css';
 
@@ -29,9 +30,23 @@ class RadioTable extends Component {
     }
 
     setSelected = (string, column) => {
-        console.log('obj');
         this.setState({ selected: { string, column } });
     }
+
+    renderRadioGroups = () => {
+        const { hovered, selected } = this.state;
+
+        return radioGroup.radioTable_1.map((item, index) => {
+            return (
+                <div className='string' key={index}>
+                    <div className={getStringClass(index + 1, hovered.string, selected.string)}><span>{ item.name }</span></div>
+                    <RadioGroup name={ item.id }
+                        onHover={(column) => this.setHovered(index + 1, column)}
+                        onSelect={(column) => this.setSelected(index + 1, column)} />
+                </div>
+            );
+        });
+    };
 
     render() {
         const { hovered, selected } = this.state;
@@ -46,34 +61,8 @@ class RadioTable extends Component {
                         <div className={getColumnClass(3, hovered.column, selected.column)}><span>Нет</span></div>
                     </div>
                 </div>
-                <div className='string'>
-                    <div className={getStringClass(1, hovered.string, selected.string)}><span>Завтракаете?</span></div>
-                    <RadioGroup name='question-1' onHover={(column) => this.setHovered(1, column)} onSelect={(column) => this.setSelected(1, column)} />
-                </div>
-                <div className='string'>
-                    <div className={getStringClass(2, hovered.string, selected.string)}><span>У Вас бывает чувство голода в течение дня?</span></div>
-                    <RadioGroup name='question-2' onHover={(column) => this.setHovered(2, column)} onSelect={(column) => this.setSelected(2, column)}/>
-                </div>
-                <div className='string'>
-                    <div className={getStringClass(3, hovered.string, selected.string)}><span>Едите мясо?</span></div>
-                    <RadioGroup name='question-3' onHover={(column) => this.setHovered(3, column)} onSelect={(column) => this.setSelected(3, column)}/>
-                </div>
-                <div className='string'>
-                    <div className={getStringClass(4, hovered.string, selected.string)}><span>Едите овощи?</span></div>
-                    <RadioGroup name='question-4' onHover={(column) => this.setHovered(4, column)} onSelect={(column) => this.setSelected(4, column)}/>
-                </div>
-                <div className='string'>
-                    <div className={getStringClass(5, hovered.string, selected.string)}><span>Едите фрукты?</span></div>
-                    <RadioGroup name='question-5' onHover={(column) => this.setHovered(5, column)} onSelect={(column) => this.setSelected(5, column)}/>
-                </div>
-                <div className='string' >
-                    <div className={getStringClass(6, hovered.string, selected.string)}><span>Едите молочные изделия?</span></div>
-                    <RadioGroup name='question-6' onHover={(column) => this.setHovered(6, column)} onSelect={(column) => this.setSelected(6, column)}/>
-                </div>
-                <div className='string'>
-                    <div className={getStringClass(7, hovered.string, selected.string)}><span>Едите сладoсти?</span></div>
-                    <RadioGroup name='question-7' onHover={(column) => this.setHovered(7, column)} onSelect={(column) => this.setSelected(7, column)}/>
-                </div>
+                { this.renderRadioGroups() }
+
             </div>
         );
     }
