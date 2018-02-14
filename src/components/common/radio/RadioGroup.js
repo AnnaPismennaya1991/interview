@@ -9,7 +9,7 @@ const RadioGroup = Radio.Group;
 const RadioGroupComponent = (props) => {
     return (
         <div className='radio-group'>
-            <RadioGroup name={ props.name } onChange={(value) => props.onSelect(value)}>
+            <RadioGroup name={ props.name } onChange={(event) => props.onSelect(event.target.value)}>
                 <div onMouseOver={() => props.onHover(1)}>
                     <Radio value='1'></Radio>
                 </div>

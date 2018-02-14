@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Select from '../common/select/Select';
 import RadioTable from '../common/radioTable/RadioTable';
 import Checkbox from '../common/checkbox/Checkbox';
-import RadioGroupWithLables from '../common/radio/RadioGroupWithLables';
 
 import TITLES from './Titles';
 import './Titles.css';

@@ -30,4 +30,4 @@ const RadioGroupWithLablesComponent = (props) => {
     );
 }
 
-export default RadioGroupWithLables;
+export default RadioGroupWithLablesComponent;
