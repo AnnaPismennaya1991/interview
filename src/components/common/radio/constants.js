@@ -1,5 +1,5 @@
 // перечень вопросов с вертикальным расположением кнопок radio
-const titles_RadioGroupWithLables = {
+const questions = {
     0: {
         title: 'Какой прием пищи для Вас главный?',
         type: 'radio',
@@ -8,7 +8,7 @@ const titles_RadioGroupWithLables = {
             { id: 2, name: 'Обед' },
             { id: 3, name: 'Ужин' }
         ]
-    }
+    },
 
     1: {
         title: 'Главный прием пищи:',
@@ -18,7 +18,7 @@ const titles_RadioGroupWithLables = {
             { id: 2, name: 'Едите в ресторане' },
             { id: 3, name: 'Вы греете предварительно подготовленные, купленные блюда' }
         ]
-    }
+    },
 
     2: {
         title: 'В выходные Вы едите обед:',
@@ -26,10 +26,10 @@ const titles_RadioGroupWithLables = {
         items: [
             { id: 1, name: 'Приготовленные домашние блюда' },
             { id: 2, name: 'В ресторане' },
-            { id: 3, name: 'Не обедаю' }
+            { id: 3, name: 'Не обедаю' },
             { id: 4, name: 'Другая возможность:' }
         ]
-    }
+    },
 
     3: {
         title: 'У Вас есть ограничения в употреблении каких-либо продуктов питания?',
@@ -38,7 +38,7 @@ const titles_RadioGroupWithLables = {
             { id: 1, name: 'Нет' },
             { id: 2, name: 'Да (скажите пожалуйста, какие):' }
         ]
-    }
+    },
 
     4: {
         title: 'У Вас есть аллергия на какой-либо продукт питания?',
@@ -47,7 +47,7 @@ const titles_RadioGroupWithLables = {
             { id: 1, name: 'Нет' },
             { id: 2, name: 'Да (скажите пожалуйста, какие):' }
         ]
-    }
+    },
 
     5: {
         title: 'Какую часть Вашего питания составляют мясо и мясные изделия?',
@@ -59,7 +59,7 @@ const titles_RadioGroupWithLables = {
             { id: 4, name: '25 %' },
             { id: 5, name: 'Менее 25 %' }
         ]
-    }
+    },
 
     6: {
         title: 'Какую часть Вашего питания составляют овощи и продукты неживотного происхождения?',
@@ -71,17 +71,17 @@ const titles_RadioGroupWithLables = {
             { id: 4, name: '25 %' },
             { id: 5, name: 'Менее 25 %' }
         ]
-    }
+    },
 
     7: {
-        title: 'Есть ли у Вас (или в прошлом были) проблемы с холестерином?',
+        title: 'Есть ли у Вас проблемы с холестерином?',
         type: 'radio-input',
         items: [
             { id: 1, name: 'Да' },
             { id: 2, name: 'Нет' },
             { id: 3, name: 'Не знаю' }
         ]
-    }
+    },
 
     8: {
         title: 'Какой у Вас индекс массы тела (BMI index)?',
@@ -98,4 +98,4 @@ const titles_RadioGroupWithLables = {
 
 }
 
-export default titles_RadioGroupWithLables;
+export default questions;

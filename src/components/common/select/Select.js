@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 import { Select } from 'antd';
+import selectData from './constants';
 import 'antd/lib/select/style/index.css';
 import './Select.css';
 
@@ -26,6 +27,7 @@ class SelectComponent extends Component {
 
     render() {
         const className = this.state.value !== undefined ? 'select-active' : '';
+        const items = selectData[this.props.id] || [];
 
         return (
             <Select dropdownClassName={this.props.dropdownClassName}
@@ -33,7 +35,7 @@ class SelectComponent extends Component {
                 placeholder={this.props.placeholder}
                 onChange={this.onChange}
                 className={className} >
-                { renderOptions(this.props.items) }
+                { renderOptions(items) }
             </Select>
         );
     }

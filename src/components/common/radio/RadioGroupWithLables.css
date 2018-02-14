@@ -1,1 +1,18 @@
 /* вопросы с вертикальным расположением кнопок radio */
+
+.radio-group-with-lables .ant-radio-group label {
+    display: block;
+    padding-top: 10px;
+}
+
+.title_name {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.ant-radio-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    display: flex !important;
+    align-items: center;
+    font-size: 15px;
+}

@@ -1,33 +1,28 @@
 // вопросы с вертикальным расположением кнопок radio
 import React from 'react';
-
 import { Radio } from 'antd';
 import 'antd/lib/radio/style/index.css';
+
+import QUESTIONS from './constants';
 import './RadioGroupWithLables.css';
 
-const RadioGroupWithLables = Radio.GroupWithLables;
+const { Group } = Radio;
 
-// quantity - количество
-const getRadios = (quantity, onHover) => {
-    const radios = [];
-
-    for (var i = 0; i < quantity; i++) {
-        radios.push(
-            <div onMouseOver={() => onHover(i + 1)}>
-                <Radio value={i + 1}></Radio>
-            </div>
-        )
-    }
-
-    return radios;
-}
+const getRadios = (items) => {
+    return items.map((item, index) => {
+        return <Radio value={index + 1} key={index}>{ item.name }</Radio>
+    });
+};
 
 const RadioGroupWithLablesComponent = (props) => {
+    const question = QUESTIONS[props.id];
+
     return (
         <div className='radio-group-with-lables'>
-            <RadioGroupWithLables name={ props.name } onChange={(value) => props.onSelect(value)}>
-                { getRadios(props.quantity, props.onHover) }
-            </RadioGroupWithLables>
+            <div className='title_name'>{ question.title }</div>
+            <Group name={ props.name }>
+                { getRadios(question.items) }
+            </Group>
         </div>
     );
 }
