@@ -1,14 +1,14 @@
-/* поле радио точек */
+/* поле всех радио точек */
 .radio-group {
     display: flex;
 }
-/* поле радио точек */
+/* поле всех радио точек */
 .radio-group .ant-radio-group {
     width: 100%;
     display: flex;
 }
 
-/* поле радио точек */
+/* поле всех радио точек */
 .radio-group .ant-radio-group > div {
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@
     height: 30px;
 }
 
-/* рамочка выбранного объекта */
+/* рамочка выбранного radio объекта */
 .ant-radio-wrapper-checked .ant-radio .ant-radio-inner,
 .ant-radio-wrapper:hover .ant-radio .ant-radio-inner,
 .ant-radio:hover .ant-radio-inner,
@@ -32,7 +32,7 @@
     transition: .3s;
 }
 
-/* внутренняя точка */
+/* внутренняя точка при клике*/
 .ant-radio-inner:after {
     background-color: #4DB6AC;
     border-radius: 50%;

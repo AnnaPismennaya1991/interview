@@ -1,10 +1,8 @@
 /* .column-1 первая колонка с вопросами
-.string-1 первая строка с вопросами
-.column-1-empty первая пустая ячейка
-.column-checkbox ячейки чекбоксов */
+.string-11-main первая строка с вариантами Да/Время от времени/Нет
+.column-1-empty первая пустая ячейка */
 
-/* таблица radio-кнопок */
-
+/* таблица вопросов и radio-кнопок */
 .Radio-table {
     align-content: space-around;
     flex-direction: column;
@@ -28,7 +26,7 @@
 
 .string-1.hovered,
 .column-1.hovered {
-    background-color: #E0F2F1
+    background-color: #E0F2F1;
 }
 
 .string-1.selected,

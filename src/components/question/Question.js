@@ -1,3 +1,4 @@
+// контейнер - вопрос и варианты ответа в виде выпадающего списка или радио-кнопок
 import React, { Component } from 'react';
 
 import Select from '../common/select/Select';
@@ -14,7 +15,6 @@ const INPUTS = {
     radioTable: RadioTable,
     checkbox: Checkbox
 };
-
 
 class Question extends Component {
     render() {

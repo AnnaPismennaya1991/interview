@@ -1,3 +1,4 @@
+// вопросы с вертикальным расположением кнопок radio
 import React from 'react';
 
 import { Radio } from 'antd';
@@ -6,6 +7,7 @@ import './RadioGroupWithLables.css';
 
 const RadioGroupWithLables = Radio.GroupWithLables;
 
+// quantity - количество
 const getRadios = (quantity, onHover) => {
     const radios = [];
 

@@ -1,4 +1,4 @@
-// название опросника
+// название каждого опросника
 const questionnaryTitles = {
     questionnaryEating: 'Привычки питания'
 }

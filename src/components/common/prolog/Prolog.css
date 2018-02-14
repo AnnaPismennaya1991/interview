@@ -1,4 +1,4 @@
-/* пролог - приветствие, имя, возраст, пол */
+/* пролог - текст-приветствие, имя, возраст, пол */
 
 /* подсказка к input */
 .prolog-input .ant-input-group-addon,
@@ -38,6 +38,7 @@
     margin-bottom: 10px;
 }
 
+/* текст - приветствие */
 .prolog-intro {
     margin-bottom: 20px;
 }

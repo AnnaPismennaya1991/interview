@@ -1,3 +1,4 @@
+// круглая кнопка Checkbox
 import React, { Component } from 'react';
 
 import { Checkbox } from 'antd';

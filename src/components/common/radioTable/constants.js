@@ -1,4 +1,4 @@
-// массив вопросов из RadioGroup - Table
+// массив вопросов из RadioTable
 
 const radioGroup = {
     radioTable_1: [

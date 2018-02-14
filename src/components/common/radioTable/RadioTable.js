@@ -1,4 +1,4 @@
-// таблица радио-кнопок
+// таблица вопросов и радио-кнопок
 import React, { Component } from 'react';
 import cx from 'classnames';
 
@@ -6,20 +6,20 @@ import radioGroup from './constants';
 import RadioGroup from '../radio/RadioGroup';
 import './RadioTable.css';
 
+// значение объекта - колонки
 const getColumnClass = (column, hovered, selected) => {
     const selectedColumns = Object.values(selected);
 
     return cx({
         hovered: column === hovered && column !== selected,
         selected: selectedColumns.includes(column),
-        'string-1': true
+        'string-1': true,
     });
 };
 
+// в ключах объекта - строки
 const getStringClass = (string, hovered, selected) => {
     const selectedStrings = Object.keys(selected);
-
-    console.log(selectedStrings);
 
     return cx({
         hovered: string === hovered && string !== selected,
@@ -37,6 +37,7 @@ class RadioTable extends Component {
 
     setSelected = (string, column) => {
         const { selected } = this.state;
+        // новый объект { ...selected, [string]: +column } включает в себя свойство старого объекта и новое свойство (добавление столбцов и колонок)
         this.setState({ selected: { ...selected, [string]: +column }});
     }
 

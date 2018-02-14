@@ -1,4 +1,4 @@
-// пролог - приветствие, имя, возраст, пол
+// пролог - текст-приветствие, поле - имя, возраст, пол
 import React, { Component } from 'react';
 import { Input } from 'antd';
 
@@ -18,6 +18,7 @@ class Prolog extends Component {
                     <div className='prolog-intro'>Здравствуйте,<br/><br/>потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты.</div>
                 </div>
                 <div className='prolog-input'>
+                    {/* addonBefore - подсказка */}
                     <Input addonBefore='Введите Ваше имя' />
                     <Input addonBefore='Введите Ваш возраст' />
                 </div>
